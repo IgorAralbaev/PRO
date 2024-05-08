@@ -14,7 +14,12 @@ int main()
 	} else if (c == '*'){
 		cout << a * b;
 	} else if (c == '/'){
-		cout << double(a) / double(b);
+		if (b == 0) {
+			cout << "Division by zero!";
+		}
+		else {
+			cout << double(a) / double(b);
+		}
 	}
 }
 
